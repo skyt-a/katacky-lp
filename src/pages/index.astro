@@ -1,0 +1,71 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Katacky - オリジナルチケットで生活にアクセントを"
+  description=""
+>
+  <div class="bg-black">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav
+        class="flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto" src="/images/icon.png" alt="" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="relative isolate px-6 pt-14 lg:px-8 bg-black">
+      <div class="flex justify-center">
+        <img src="/images/brandLogo.png" class="h-96 w-auto" />
+      </div>
+      <div class="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
+        <h1
+          class="text-4xl font-bold tracking-tight text-white sm:text-6xl text-justify"
+        >
+          オリジナルチケットで生活にアクセントを
+        </h1>
+        <div class="lg:grid sm:block gap-x-20 grid-cols-[1.2fr_2fr] mt-8">
+          <div class="text-center flex flex-col justify-center">
+            <p class="mt-6 text-lg leading-8 text-white">
+              何気ない約束事もルールもチケットを使えば特別なタイミングに
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="https://katacky.xyz/auth/login"
+                class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >早速始める</a
+              >
+            </div>
+          </div>
+          <div>
+            <img src="/images/iphone.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style lang="scss">
+  @use "src/styles/global" as *;
+
+  .h1 {
+    font-family: sans-serif;
+    font-size: 24px;
+
+    @include mq_custom(1155px) {
+      color: red;
+    }
+
+    @include mq(md) {
+      font-size: 16px;
+    }
+  }
+</style>
